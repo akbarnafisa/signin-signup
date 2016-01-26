@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://fb.me/react-0.14.6.js"></script>
+	<script src="https://fb.me/react-dom-0.14.6.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <title></title>
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+ <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+<body>
+    <div data-role="page" id="pagezero"></div>
+	  <div data-role="page" id="pageone"></div>
+    <div data-role="page" id="pagetwo"></div>
+    <div data-role="page" id="pagethree"></div>
+
+
+
+    
+  <script type="text/babel">
+  var FirstPage = React.createClass({
+      FirstPage : function(){
+                return (
+                         <div className="BodyWrapper">
+                            <div className="main">
+
+                              <div className="headerImage">
+                                  <div className="Layer"></div>
+                                  <div className="Logo">
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+                              </div>
+
+                              <div className="firstWrapper">
+                                  <div className="Button">
+                                      <a href="#pagetwo"  data-transition="slidedown">SIGN UP</a>
+                                  </div>
+                                  <p>ALREADY HAVE AN ACCOUNT ? </p>
+
+                                  <div className="Button">
+                                       <a href="#pageone"  data-transition="slidedown">SIGN IN</a>
+                                  </div>
+                              </div>
+
+                            </div>
+                        </div>
+                        )
+
+            },
+
+              render : function(){
+                return(
+                    <div>
+                        <div id="FirstPage" >
+                            {this.FirstPage()}
+                        </div>
+                    </div>
+
+                    )
+            }
+  })
+    ReactDOM.render(
+       <FirstPage/>,
+        document.getElementById('pagezero')
+    );
+  </script>
+
+  <script type="text/babel">
+
+
+    var SignIn = React.createClass({
+
+            SignIn : function(){
+                return (
+                         <div   className="BodyWrapper  wew">
+                            <div className="main">
+                                <div className="headerSignIn">
+                                    <p>SIGN IN</p>
+                                </div>
+                                <div className="inputWrapper">
+                                      <i className="fa fa-child"></i>
+                                      <input type="text" placeholder="Username"/>
+                                </div>
+                                <div className="inputWrapper">
+                                      <i className="fa fa-lock"></i>
+                                      <input type="text" placeholder="Password"/>
+                                </div>
+                                <div className="forgotPassword">
+                                     <a  href="#pagethree"  data-transition="slidedown">Forgot Password</a>
+                                </div>
+                                <div className="Button">
+                                    <p>SIGN IN</p>
+                                </div>
+                                <div className="SignUp">
+                                    <p>DONT HAVE AN ACCOUNT ? <a id="wew" href="#pagetwo"  data-transition="slide">SIGN UP</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        )  
+            },
+            render : function(){
+                return(
+                    <div >
+                        <div id="SignIn">
+                            {this.SignIn()}
+                        </div>
+                    </div>
+
+                    )
+            }
+        
+    });
+    ReactDOM.render(
+       <SignIn/>,
+        document.getElementById('pageone')
+    );
+  </script>
+
+
+
+  <script type="text/babel">
+
+  var SignUp = React.createClass({
+      SignUp : function(){
+                return (
+                         <div className="BodyWrapper">
+                            <div className="headerImage">
+                                <div className="Layer"></div>
+                            </div>
+                            <div className="main">
+                                    <div className="headerSignUp">
+                                        <p>SIGN UP</p>
+                                    </div>
+                                    <div className="formSignUp">
+                                        <div className="inputWrapper">
+                                              <i className="fa fa-child"></i>
+                                              <input type="text" placeholder="Name"/>
+                                        </div>
+                                        <div className="inputWrapper">
+                                              <i className="fa fa-envelope-o"></i>
+                                              <input type="text" placeholder="Email"/>
+                                        </div>
+                                        <div className="inputWrapper">
+                                              <i className="fa fa-lock"></i>
+                                              <input type="text" placeholder="Password"/>
+                                        </div>
+                                        <div className="inputWrapper">
+                                              <i className="fa fa-unlock-alt"></i>
+                                              <input type="text" placeholder="Confirm Password"/>
+                                        </div>
+                                    </div>
+                         
+                                <div className="Button">
+                                    <p>SIGN UP</p>
+                                </div>
+                                <div className="SignUp">
+                                    <p>ALREADY HAVE AN ACCOUNT ?  <a href="#pageone"   data-transition="slide">SIGN IN</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        )
+
+            },
+
+              render : function(){
+                return(
+                    <div>
+                        <div id="SignUp" >
+                            {this.SignUp()}
+                        </div>
+                    </div>
+
+                    )
+            }
+  })
+    ReactDOM.render(
+       <SignUp/>,
+        document.getElementById('pagetwo')
+    );
+  </script>
+
+    <script type="text/babel">
+
+    var Passowrd = React.createClass({
+        Pass : function(){
+                  return (
+                           <div className="BodyWrapper">
+                              <div className="headerImage">
+                                  <div className="Layer"></div>
+                              </div>
+                              <div className="main">
+                                  <a  href="#pageone" className="headerSignUp"  data-transition="slide">
+                                    <div className="close">
+                                       <span></span>
+                                       <span></span>
+                                    </div>
+                                     <div>Change Password</div>
+                                  </a>
+                                  <div className="inputWrapper">
+                                        <i className="fa fa-envelope-o"></i>
+                                        <input type="text" placeholder="Email"/>
+                                  </div>
+                                  <div className="Button">
+                                      <p>SEND</p>
+                                  </div>
+                              </div>
+                          </div>
+                          )
+              },
+
+              render : function(){
+                return(
+                    <div>
+                        <div id="Password" >
+                            {this.Pass()}
+                        </div>
+                    </div>
+
+                    )
+            }
+  })
+    ReactDOM.render(
+       <Passowrd/>,
+        document.getElementById('pagethree')
+    );
+  </script>
+
+
+
+
+</body>
+</html>

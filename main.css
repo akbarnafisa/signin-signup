@@ -1,0 +1,423 @@
+* {
+  text-shadow: 0 0 0 whitesmoke !important; }
+
+body {
+  background-color: white;
+  margin: 0; }
+
+.ui-body-inherit {
+  border-color: transparent !important; }
+
+.ui-focus {
+  box-shadow: 0 0 0 transparent !important; }
+
+.close {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  top: -3px; }
+  .close span {
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: #2B2B2B;
+    top: 20px; }
+    .close span:nth-child(1) {
+      transform: rotate(45deg); }
+    .close span:nth-child(2) {
+      transform: rotate(-45deg); }
+
+#pagezero {
+  background-color: #2B2B2B; }
+  #pagezero #FirstPage .BodyWrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    position: relative; }
+    #pagezero #FirstPage .BodyWrapper .main {
+      background-color: #2B2B2B;
+      width: 100%;
+      height: 100%;
+      font-family: "Lato", sans-serif;
+      box-sizing: border-box; }
+      #pagezero #FirstPage .BodyWrapper .main .headerImage {
+        width: 100%;
+        height: 100%;
+        background: url("macbook.jpg");
+        background-size: cover;
+        position: absolute;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        #pagezero #FirstPage .BodyWrapper .main .headerImage .Layer {
+          width: 100%;
+          height: 100%;
+          background-color: #2B2B2B;
+          opacity: 0.5;
+          position: absolute;
+          top: 0; }
+        #pagezero #FirstPage .BodyWrapper .main .headerImage .Logo {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.8);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          top: 17%;
+          z-index: 1; }
+          #pagezero #FirstPage .BodyWrapper .main .headerImage .Logo span {
+            position: absolute; }
+            #pagezero #FirstPage .BodyWrapper .main .headerImage .Logo span:nth-child(1) {
+              width: 51px;
+              height: 10px;
+              background: #F73968;
+              left: 32px;
+              top: 45px;
+              transform: rotate(-48deg); }
+            #pagezero #FirstPage .BodyWrapper .main .headerImage .Logo span:nth-child(2) {
+              width: 28px;
+              height: 10px;
+              background: #E02352;
+              left: 22px;
+              top: 54px;
+              transform: rotate(39deg); }
+      #pagezero #FirstPage .BodyWrapper .main .firstWrapper {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        #pagezero #FirstPage .BodyWrapper .main .firstWrapper p {
+          color: whitesmoke;
+          font-size: 11px;
+          padding-top: 10px; }
+        #pagezero #FirstPage .BodyWrapper .main .firstWrapper .Button {
+          height: 50px;
+          width: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          text-align: center;
+          background-color: #F5426F;
+          color: white;
+          font-weight: 600;
+          letter-spacing: 1px;
+          border-radius: 6%; }
+          #pagezero #FirstPage .BodyWrapper .main .firstWrapper .Button:nth-child(1) {
+            border: 2px solid #f36;
+            background-color: transparent !important; }
+          #pagezero #FirstPage .BodyWrapper .main .firstWrapper .Button a {
+            text-decoration: none;
+            color: whitesmoke;
+            width: 100%; }
+
+#pageone {
+  background-color: #2B2B2B; }
+  #pageone #SignIn .BodyWrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    position: relative;
+    background: url("macbook.jpg");
+    background-size: cover;
+    position: absolute;
+    background-position: right; }
+    #pageone #SignIn .BodyWrapper .main {
+      background-color: rgba(43, 43, 43, 0.5);
+      width: 100%;
+      height: 100%;
+      font-family: "Lato", sans-serif;
+      padding: 20px;
+      box-sizing: border-box; }
+      #pageone #SignIn .BodyWrapper .main .headerSignIn {
+        font-size: 30px;
+        color: whitesmoke;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 15px; }
+        #pageone #SignIn .BodyWrapper .main .headerSignIn p {
+          margin: 0; }
+      #pageone #SignIn .BodyWrapper .main .inputWrapper {
+        width: 100%;
+        display: flex; }
+        #pageone #SignIn .BodyWrapper .main .inputWrapper i {
+          font-size: 32px;
+          padding: 10px;
+          color: whitesmoke; }
+        #pageone #SignIn .BodyWrapper .main .inputWrapper input {
+          width: 100%;
+          height: 30px;
+          font-weight: 300;
+          font-family: "Lato", sans-serif;
+          border: 0;
+          padding: 10px;
+          background-color: transparent;
+          font-size: 15px;
+          color: #2B2B2B; }
+      #pageone #SignIn .BodyWrapper .main .forgotPassword {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-bottom: 25px;
+        padding-top: 25px; }
+        #pageone #SignIn .BodyWrapper .main .forgotPassword a {
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 13px;
+          color: whitesmoke; }
+      #pageone #SignIn .BodyWrapper .main .Button {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        background-color: #F5426F;
+        color: white;
+        margin-top: 201px;
+        font-weight: 600;
+        letter-spacing: 1px; }
+      #pageone #SignIn .BodyWrapper .main .SignUp {
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        margin-top: 22px; }
+        #pageone #SignIn .BodyWrapper .main .SignUp a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-weight: 700; }
+
+#pagetwo #SignUp .BodyWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  position: relative; }
+  #pagetwo #SignUp .BodyWrapper .headerImage {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    background-size: cover;
+    position: relative;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; }
+  #pagetwo #SignUp .BodyWrapper .main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: whitesmoke; }
+    #pagetwo #SignUp .BodyWrapper .main .headerSignUp {
+      font-size: 30px;
+      color: #2B2B2B;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 15px; }
+      #pagetwo #SignUp .BodyWrapper .main .headerSignUp p {
+        margin: 0; }
+    #pagetwo #SignUp .BodyWrapper .main .formSignUp {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      #pagetwo #SignUp .BodyWrapper .main .formSignUp .inputWrapper {
+        display: flex;
+        width: 100%;
+        padding-top: 10px; }
+        #pagetwo #SignUp .BodyWrapper .main .formSignUp .inputWrapper i {
+          font-size: 27px;
+          padding: 10px;
+          color: #2B2B2B;
+          border-bottom: 2px solid black; }
+        #pagetwo #SignUp .BodyWrapper .main .formSignUp .inputWrapper input {
+          width: 78%;
+          height: 32px !important;
+          font-weight: 300 !important;
+          font-family: "Lato", sans-serif !important;
+          padding: 19px !important;
+          font-size: 15px !important;
+          position: absolute;
+          border-radius: 0;
+          border-bottom: 2px solid #2B2B2B;
+          left: 57px; }
+    #pagetwo #SignUp .BodyWrapper .main .Button {
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      background-color: #F5426F;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 134px; }
+    #pagetwo #SignUp .BodyWrapper .main .SignUp {
+      bottom: 15px;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #2B2B2B;
+      margin-top: 13px; }
+      #pagetwo #SignUp .BodyWrapper .main .SignUp a {
+        text-decoration: none;
+        color: #2B2B2B;
+        font-weight: 700; }
+
+#pagethree #Password .BodyWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  position: relative; }
+  #pagethree #Password .BodyWrapper .headerImage {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    background-size: cover;
+    position: relative;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; }
+  #pagethree #Password .BodyWrapper .main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: whitesmoke; }
+    #pagethree #Password .BodyWrapper .main .headerSignUp {
+      display: flex;
+      align-items: center;
+      font-size: 19px;
+      color: #2B2B2B;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 256px; }
+      #pagethree #Password .BodyWrapper .main .headerSignUp div {
+        text-decoration: none;
+        color: #2B2B2B; }
+    #pagethree #Password .BodyWrapper .main .inputWrapper {
+      display: flex;
+      width: 100%;
+      padding-top: 10px; }
+      #pagethree #Password .BodyWrapper .main .inputWrapper i {
+        font-size: 27px;
+        padding: 10px;
+        color: #2B2B2B;
+        border-bottom: 2px solid black; }
+      #pagethree #Password .BodyWrapper .main .inputWrapper input {
+        width: 78%;
+        height: 32px !important;
+        font-weight: 300 !important;
+        font-family: "Lato", sans-serif !important;
+        padding: 19px !important;
+        font-size: 15px !important;
+        position: absolute;
+        border-radius: 0;
+        border-bottom: 2px solid #2B2B2B;
+        left: 57px; }
+    #pagethree #Password .BodyWrapper .main .Button {
+      height: 50px;
+      width: 90px;
+      text-align: center;
+      background-color: #F5426F;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 60px;
+      float: right;
+      border-radius: 10%; }
+
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(https://fonts.gstatic.com/s/lato/v11/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(https://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/PLygLKRVCQnA5fhu3qk5fQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/*# sourceMappingURL=main.css.map */
